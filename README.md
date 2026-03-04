@@ -1,9 +1,59 @@
-# visualizeBlender
-I am going to be developing useful blender plugins to improve user life quality and reduce simple redundant tasks.
+# visualize — Blender Addons
 
-## Camera_Object_Approach [Repository]([https://pages.github.com/](https://github.com/maherhms/visualizeBlender/tree/main/Camera_Object_Approach))
-> This plugin allows The camera to be animated to the selected object with depth of field. The animation length is set to 250 frames per default.
+A collection of **Blender Python addons** built to eliminate repetitive tasks and improve workflow efficiency for 3D artists and designers.
 
-## MultiCam Auto Render Pro [Repository]([https://pages.github.com/]([https://github.com/maherhms/visualizeBlender/tree/main/MultiCam_Auto_Render_Pro))
-> is a Blender addon designed to simplify the process of rendering scenes from multiple cameras. It allows Blender users to automatically render from each camera in a scene with a user-specified filename and directory, providing real-time progress updates and the ability to cancel rendering mid-process. This tool is ideal for projects requiring multiple angle captures without interrupting workflow.
+These tools were developed during active freelance work in 3D interior design — solving real problems that came up on real projects.
 
+---
+
+## 🔌 Addons
+
+### 1. [MultiCam Auto Render Pro](./MultiCam_Auto_Render_Pro)
+
+Automatically renders your scene from every camera in sequence — no manual switching, no repeated clicking.
+
+**The problem it solves:** When presenting 3D interior designs to clients, you often need renders from 8–12 camera angles. Doing this manually means switching cameras, setting filenames, and hitting render repeatedly. This addon does it all in one click.
+
+**Key features:**
+- Renders from every camera in the scene sequentially
+- User-defined output directory and base filename
+- Real-time progress display in the Blender UI (e.g. "Rendering: Camera_03 (42%)")
+- Cancel rendering at any point mid-process
+- Auto-creates output directory if it doesn't exist
+
+---
+
+### 2. [Camera Object Approach](./Camera_Object_Approach)
+
+Animates the active camera toward any selected object with automatic depth-of-field, in one click.
+
+**The problem it solves:** Setting up camera fly-through animations with DOF manually requires keyframing position and focus distance separately. This addon handles both automatically.
+
+**Key features:**
+- Animates camera position from current location to selected object
+- Automatically sets and animates depth-of-field distance
+- Default animation length of 250 frames
+- Works with any scene camera and any object type
+
+---
+
+## 🛠️ Installation (both addons)
+
+1. Download the `.py` file for the addon you want
+2. Open Blender → `Edit > Preferences > Add-ons`
+3. Click `Install` and select the downloaded file
+4. Enable the addon by ticking the checkbox next to its name
+
+---
+
+## 🧰 Built With
+
+- Python 3
+- Blender Python API (`bpy`)
+- Blender 2.80+
+
+---
+
+## 👤 About
+
+Built by [Maher](https://mahersdesigns.com) — a 3D designer and developer who got tired of doing the same things manually and wrote code to fix it.
